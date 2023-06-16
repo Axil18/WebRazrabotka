@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p>Это обычный HTML документ</p>
+
+<script language="JavaScript">
+let userAge = parseInt(prompt("Введите свой возраст:"));	
+	switch (true) {
+  case (userAge < 0):
+    alert("Ошибка: Возраст не может быть отрицательным!");
+    break;
+  case (userAge >= 0 && userAge <= 12):
+    alert("Вы ребенок.");
+    break;
+  case (userAge >= 13 && userAge <= 19):
+    alert("Вы подросток.");
+    break;
+  case (userAge >= 20 && userAge <= 59):
+  	alert("Вы взрослый.");
+    break;
+  case (userAge >= 60):
+    alert("Вы пожилой человек.");
+    break;
+  default:
+    alert("Введенное значение не является числом.");
+    break;
+}
+	// function showMessage() {
+	// 	alert('Как вас зовут??');
+	// }
+	// showMessage();
+</script>
+
+
+
+
+</body>
+</html>
